@@ -295,4 +295,29 @@ public class LinkedListProblems {
 		}
 		System.out.println("Not Circular linked list");
 	}
+	
+	// Finding modular node in a Linked List
+	public void getModular(int k)
+	{
+		Node temp=LinkedListC.head;
+		Node modl=LinkedListC.head;
+		int n=0;
+		if(LinkedListC.head!=null)
+		{
+			while(temp!=null)
+			{
+				n=n+1;
+				if(n%k==0)
+				{
+					modl=temp;
+				}
+				temp=temp.next;
+			}
+			if(n>1 && modl!=LinkedListC.head)
+			{
+				System.out.println("Modular Node: "+modl.data);
+			}
+		}
+		
+	}
 }

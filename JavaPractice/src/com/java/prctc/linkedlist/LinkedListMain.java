@@ -27,7 +27,8 @@ public class LinkedListMain {
         //lp.swapElements();
         //lp.reverseList(llist.head, null);
         //lp.printListEle();
-        lp.isCircular();
+        ///lp.isCircular();
+        lp.getModular(3);
 	}
 
 }
